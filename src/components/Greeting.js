@@ -1,9 +1,7 @@
-const nome = "Nicolas"
+const nome = 'Nicolas';
 
-function Greeting(){
-    return (
-    <div><h1>Olá, {nome}!</h1></div>
-    )
+function ola() {
+    return <h1>Olá {nome}</h1>;
 }
 
-export default Greeting;
+export default ola;

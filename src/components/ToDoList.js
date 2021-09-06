@@ -1,22 +1,31 @@
-const checks = [
-  "Fazer compras",
-  "Renovar CNH",
-  "Pagar contas",
-  "Estudar React",
-  "Fazer Minilab",
+const tasks = [
+    'Fazer compras',
+    'Renovar CNH',
+    'Pagar contas',
+    'Estudar React',
+    'Fazer Minilab',
 ];
 
-function ToDoList(){
+function List() {
     return (
-      <ul className = "list">
-          {checks.map((checks) => {
-          return <li className = "list-group-item">
-            <input className="form-check-input me-1" type="checkbox" value="" aria-label="..." />
-              {checks}
-          </li>;
-          })}
-      </ul>
-    )
+        <ul class="list-group">
+            {tasks.map(tarefas => {
+                return (
+                    <li>
+                        <li class="list-group-item">
+                            <input
+                                class="form-check-input me-1"
+                                type="checkbox"
+                                value=""
+                                aria-label="..."
+                            />
+                            {tarefas}
+                        </li>
+                    </li>
+                );
+            })}
+        </ul>
+    );
 }
 
-export default ToDoList
+export default List;

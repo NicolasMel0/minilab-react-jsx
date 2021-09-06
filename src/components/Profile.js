@@ -1,16 +1,23 @@
-import imagem from "../assets/images/puppy.jpg"
+import imagem from '../assets/images/puppy.jpg';
 
-function Profile(){
+function Card() {
     return (
-    <div class="card" style={{width: "20rem"}}>
-    <img src={imagem} class="card-img-top" alt="filhote de cachorro" />
-        <div className="card-body">
-            <h5 className="card-title">Cute Puppy</h5>
-            <p className="card-text"></p>
+        <div>
+            <div className="card" styles="width: 16rem;">
+                <img
+                    src={imagem}
+                    className="card-img-top"
+                    alt="Imagens de um cachorrinho"
+                />
+                <div className="card-body">
+                    <p className="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                    </p>
+                </div>
+            </div>
         </div>
-    </div>
-    )
+    );
 }
 
-export default Profile
-
+export default Card;
